@@ -1,0 +1,17 @@
+html {
+  --color-black: #0d114f;
+  --color-white: #fafafa;
+  --color-red: #e83f5b;
+  --color-light-blue: #e0ecff;
+  --color-blue: #e0ecff;
+  --color-background: #fbfcff;
+  --color-overlay: #040911;
+  --color-icon-details: #a5b0c1;
+  --color-grey: #4d5e77;
+  --color-grey-blue: #a1b2cd;
+  --color-grey-mediu: #d3d9e2;
+  --color-grey-light: #e5eaf1;
+  --color-hover-blue: #5699ff;
+  --color-hover-red: #ea4b65;
+  --color-hover-grey: #8794a7;
+}
