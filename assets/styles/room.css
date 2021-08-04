@@ -51,6 +51,7 @@
   border: 0.2rem solid var(--color-grey-blue);
   padding: 1.6rem;
   border-radius: 0 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 1.6rem;
 }
 #question-form form textarea {
   width: 100%;
@@ -85,4 +86,58 @@
   height: auto;
   padding: 0.8rem 2.4rem;
   line-height: 2.4rem;
+}
+/* Questions */
+.question-wrapper {
+  background: var(--color-light-blue);
+  margin-bottom: 0.8rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  padding: 2.4rem;
+}
+
+.question-wrapper .question-content {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2.4rem;
+}
+.question-wrapper .question-content .user {
+  background: var(--color-blue);
+  clip-path: circle();
+  padding: 1.4rem;
+}
+
+.question-wrapper .question-content p {
+  min-height: 5.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.6rem;
+  color: var(--color-black);
+  word-break: break-word;
+}
+.question-wrapper .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.question-wrapper .actions > a {
+  display: flex;
+  align-items: center;
+}
+/* Podemos usar o a + a, causando o mesmo efeito */
+.question-wrapper .actions > a > img {
+  margin-right: 0.8rem;
+}
+
+.question-wrapper .actions > a:nth-child(2) {
+  margin-left: 2.4rem;
+}
+/* ********************* Question Read ************** */
+
+.question-wrapper.read {
+  background: var(--color-grey-medium);
+}
+
+.question-wrapper.read .question-content .user {
+  background: var(--color-grey-blue);
 }
