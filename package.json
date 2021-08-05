@@ -1,12 +1,12 @@
 {
   "name": "nlw_together",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "repository": "https://github.com/jeanAt2/nlw_together.git",
   "author": "jeanAt2 <jean0king@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon run src/server.js"
+    "dev": "nodemon ."
   },
   "dependencies": {
     "ejs": "^3.1.6",
