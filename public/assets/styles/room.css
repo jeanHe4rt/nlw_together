@@ -1,0 +1,143 @@
+.content {
+  max-width: min(112rem, 90%);
+}
+#room header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#room header .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#room header .buttons .button:nth-child(1) {
+  margin-right: 0.8rem;
+  padding: 1.3 1.6rem;
+  width: 13.4rem;
+  height: 5rem;
+}
+
+#room header .buttons .button:nth-child(1) img {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2) {
+  width: 17.3rem;
+  height: 5rem;
+}
+#room header .buttons .button:nth-child(2) img {
+  margin-right: 1rem;
+  padding: 1.3 3.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* QUESTION FORM */
+
+#question-form h2 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 2.8rem;
+  color: var(--color-black);
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  line-height: 4.2rem;
+}
+
+#question-form form {
+  border: 0.2rem solid var(--color-grey-blue);
+  padding: 1.6rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 1.6rem;
+}
+#question-form form textarea {
+  width: 100%;
+  outline: none;
+  resize: none;
+  background: none;
+}
+#question-form form textarea:placeholder-shown {
+  color: var(--color-grey-blue);
+}
+
+#question-form form footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#question-form form footer > div {
+  display: flex;
+  align-items: center;
+  color: var(--color-icon-details);
+  font-family: "Poppins", Sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+#question-form form footer div img {
+  margin-right: 0.6rem;
+}
+#question-form form footer button {
+  width: 9.8rem;
+  height: auto;
+  padding: 0.8rem 2.4rem;
+  line-height: 2.4rem;
+}
+/* Questions */
+.question-wrapper {
+  background: var(--color-light-blue);
+  margin-bottom: 0.8rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  padding: 2.4rem;
+}
+
+.question-wrapper .question-content {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2.4rem;
+}
+.question-wrapper .question-content .user {
+  background: var(--color-blue);
+  clip-path: circle();
+  padding: 1.4rem;
+}
+
+.question-wrapper .question-content p {
+  min-height: 5.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.6rem;
+  color: var(--color-black);
+  word-break: break-word;
+}
+.question-wrapper .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.question-wrapper .actions > a {
+  display: flex;
+  align-items: center;
+}
+/* Podemos usar o a + a, causando o mesmo efeito */
+.question-wrapper .actions > a > img {
+  margin-right: 0.8rem;
+}
+
+.question-wrapper .actions > a:nth-child(2) {
+  margin-left: 2.4rem;
+}
+/* ********************* Question Read ************** */
+
+.question-wrapper.read {
+  background: var(--color-grey-medium);
+}
+
+.question-wrapper.read .question-content .user {
+  background: var(--color-grey-blue);
+}
