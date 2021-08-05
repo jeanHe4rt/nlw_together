@@ -21,6 +21,7 @@ html {
   --color-hover-blue: #5699ff;
   --color-hover-red: #ea4b65;
   --color-hover-grey: #8794a7;
+  --color-grey-medium: #edeff1;
   font-size: 62.5%;
 }
 
@@ -36,7 +37,7 @@ button,
 input,
 textarea {
   font-size: clamp(14px, 1.6rem, 2vw);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* font-family: 'Poppins', sans-serif; */
 }
 .content {
@@ -64,7 +65,7 @@ input,
 
 button,
 .button {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 0;
 
@@ -82,10 +83,23 @@ button:hover,
   filter: brightness(1.2);
 }
 
-button > img .button > img {
-  margin-left: 1rem;
+button > img,
+.button > img {
+  margin-right: 1rem;
   width: 2rem;
 }
+button.red,
+.button.red {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+button.grey,
+.button.grey {
+  background: var(--color-grey-light);
+  color: var(--color-grey-dark);
+}
+/* ************** HEADER ****** */
 button.outlined,
 .button.outlined {
   background: var(--color-white);
@@ -98,6 +112,6 @@ button.outlined,
   margin: 3.5rem auto;
 }
 
-.content header imh {
+.content header img {
   width: 16.7rem;
 }
