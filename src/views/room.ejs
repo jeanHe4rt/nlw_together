@@ -17,20 +17,22 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!----- SCRIPTS ------->
+    <script src="/scripts/main.js" defer type="module"></script>
   </head>
   <body>
     <div id="room" class="content">
       <header>
-        <a href="">
+        <a href="/">
           <img src="/assets/svgs/logo.svg" alt="Rocket.q Logo" />
         </a>
         <div class="buttons">
-          <div class="button outlined">
-            #323243
-            <img src="assets/svgs/box-box.svg" alt="Copiar numero da sala" />
+          <div class="button outlined" id="room-id" data-id="roomID">
+            <p class="roomID"></p>
+            <img src="/assets/svgs/box-box.svg" alt="Copiar numero da sala" />
           </div>
           <a class="button" href="#">
-            <img src="assets/svgs/users-white.svg" alt="Criar um sala" />
+            <img src="/assets/svgs/users-white.svg" alt="Criar um sala" />
             Criar Sala
           </a>
         </div>
@@ -38,7 +40,7 @@
       <main>
         <section id="question-form">
           <h2>Faça a sua pergunta</h2>
-          <form action="">
+          <form action="#" method="POST">
             <label class="sr-only" for-id="question">
               O que você quer perguntar?
             </label>
@@ -49,7 +51,7 @@
             ></textarea>
             <footer>
               <div>
-                <img src="assets/svgs/padlock.svg" alt="Cadeado" />
+                <img src="/assets/svgs/padlock.svg" alt="Cadeado" />
                 Está pergunta é anônima.
               </div>
               <button>Enviar</button>
@@ -69,11 +71,11 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="check">
-                <img src="assets/svgs/check.svg" alt="Marcar como lida" />
+              <a href="#" class="check" data-id="2">
+                <img src="/assets/svgs/check.svg" alt="Marcar como lida" />
                 Marcar como lida
               </a>
-              <a href="#" class="trash">
+              <a href="#" class="delete" data-id="2">
                 <img src="/assets/svgs/trash.svg" alt="Excluir" />
                 Excluir
               </a>
@@ -90,11 +92,11 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="check">
-                <img src="assets/svgs/check.svg" alt="Marcar como lida" />
+              <a href="#" class="check" data-id="3">
+                <img src="/assets/svgs/check.svg" alt="Marcar como lida" />
                 Marcar como lida
               </a>
-              <a href="#" class="trash">
+              <a href="#" class="delete" data-id="3">
                 <img src="/assets/svgs/trash.svg" alt="Excluir" />
                 Excluir
               </a>
@@ -111,7 +113,7 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="trash">
+              <a href="#" class="delete" data-id="1">
                 <img src="/assets/svgs/trash.svg" alt="Excluir" />
                 Excluir
               </a>
@@ -144,11 +146,11 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="check">
-                <img src="assets/svgs/check.svg" alt="Marcar como lida" />
+              <a href="#" class="check" data-id="4">
+                <img src="/assets/svgs/check.svg" alt="Marcar como lida" />
                 Marcar como lida
               </a>
-              <a href="#" class="trash">
+              <a href="#" class="delete" data-id="4">
                 <img src="/assets/svgs/trash.svg" alt="Excluir" />
                 Excluir
               </a>
@@ -163,7 +165,7 @@
         <h2>Excluir Pergunta</h2>
         <p>Tem certeza que deseja excluir esta pergunta?</p>
 
-        <form action="">
+        <form action="#" method="POST">
           <label class="sr-only">Digite a sua senha</label>
           <input
             type="password"
@@ -172,7 +174,7 @@
           />
 
           <div class="buttons">
-            <div class="button grey">Cancelar</div>
+            <div class="button grey cancel">Cancelar</div>
             <button class="red">Sim, excluir</button>
           </div>
         </form>
